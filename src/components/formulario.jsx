@@ -28,13 +28,13 @@ export const FormularioTareas = (props) => {
       <input
       type="text"
       className="tarea-input"
-      placeholder="Agrega tareas pendientes 😀"
+      placeholder="Agrega tus pendientes 😀"
       name='texto'
       onChange={manejarCambio}
       />
       <button 
         className="tarea-boton">
-        Agregar paps
+        Agregar
       </button>
     </form>
   );
