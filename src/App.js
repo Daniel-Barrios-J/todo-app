@@ -2,7 +2,7 @@ import { Lista } from './components/listaTareas'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   padding: 24px;
   background-color: #395B64;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,7 +14,7 @@ const TodoList = styled.div`
   width: 80vw;
   max-width: 720px;
   min-width: 320px;
-  min-height: 80vh;
+  min-height: 50vh;
   background-color: #E9F8F9;
   padding: 25px;
   border-radius: 16px;
