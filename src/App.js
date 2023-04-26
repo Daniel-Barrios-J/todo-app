@@ -18,8 +18,9 @@ const TodoList = styled.div`
   background-color: #E9F8F9;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: 6px 6px 12px #18122B;
+  box-shadow: 2px 2px 16px #18122B;
   color: white;
+  border: solid 2px #A1B57D;
   h1 {
     color: #1b1b32;
     font-size: 25px;
@@ -32,7 +33,7 @@ function App() {
   return (
     <AppContainer className="aplicacion-tareas">
       <TodoList className='tareas-lista-principal'>
-        <h1>Mis Notas</h1>
+        <h1>Todo list</h1>
         <Lista />
       </TodoList>
     </AppContainer>
