@@ -6,8 +6,22 @@ const AppContainer = styled.div`
   padding: 24px;
   background-color: #395B64;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  .repo-container {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 12px;
+    a {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: smaller;
+      color: azure;
+    }
+  }
 `
 
 const TodoList = styled.div`
@@ -36,6 +50,12 @@ function App() {
         <h1>Todo list</h1>
         <Lista />
       </TodoList>
+      <div className='repo-container'>
+        <a href="https://github.com/Daniel-Barrios-J/creador-memes" target='_blank' rel='noreferrer'>
+          Go to the GitHub repository
+        </a>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" width={'24px'} />
+      </div>
     </AppContainer>
   );
 }
