@@ -1,6 +1,7 @@
 import { Lista } from './components/listaTareas'
 import styled from 'styled-components'
 
+//styled components
 const AppContainer = styled.div`
   min-height: 100vh;
   padding: 24px;
@@ -42,7 +43,7 @@ const TodoList = styled.div`
     margin: 20px 0;
   }
 `
-
+//Component
 function App() {
   return (
     <AppContainer className="aplicacion-tareas">
@@ -51,7 +52,7 @@ function App() {
         <Lista />
       </TodoList>
       <div className='repo-container'>
-        <a href="https://github.com/Daniel-Barrios-J/creador-memes" target='_blank' rel='noreferrer'>
+        <a href="https://github.com/Daniel-Barrios-J/todo-app" target='_blank' rel='noreferrer'>
           Go to the GitHub repository
         </a>
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" width={'24px'} />
