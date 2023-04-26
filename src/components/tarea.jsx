@@ -13,7 +13,7 @@ export const Tarea = ({ texto, completada, id, completarTarea, eliminarTarea }) 
       <div 
         className="tarea-contenedor-iconos"
         onClick={() => eliminarTarea(id)}>
-          <img className="tarea-icono" src="https://img.icons8.com/color/48/null/trash--v1.png"/>
+          <img alt="icon-trash" className="tarea-icono" src="https://img.icons8.com/color/48/null/trash--v1.png"/>
       </div>
     </div>
   );
