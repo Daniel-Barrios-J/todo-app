@@ -13,7 +13,7 @@ export const Lista = () => {
       const tareasActualizadas = [tarea, ...tareas];
       setTareas(tareasActualizadas);
     } else {
-      alert('ingresa algo, bobo');
+      alert('Ingresa algo...');
     }
   };
 

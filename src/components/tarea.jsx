@@ -1,6 +1,6 @@
 import React from "react";
 import '../stylesheets/tarea.css';
-import { AiOutlineCar } from "react-icons/ai";
+
 
 export const Tarea = ({ texto, completada, id, completarTarea, eliminarTarea }) => {
   return(
@@ -13,7 +13,7 @@ export const Tarea = ({ texto, completada, id, completarTarea, eliminarTarea }) 
       <div 
         className="tarea-contenedor-iconos"
         onClick={() => eliminarTarea(id)}>
-        <AiOutlineCar className="tarea-icono" />
+          <img className="tarea-icono" src="https://img.icons8.com/color/48/null/trash--v1.png"/>
       </div>
     </div>
   );

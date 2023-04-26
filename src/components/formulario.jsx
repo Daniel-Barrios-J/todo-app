@@ -12,13 +12,13 @@ export const FormularioTareas = (props) => {
 
   const manejarEnvio = e => {
     e.preventDefault();
-
     const tareaNueva = {
       id: uuidv4(),
       texto: input,
       completada: false
     };
     props.onSubmit(tareaNueva);
+    setInput('');
   };
 
   return(
@@ -28,8 +28,9 @@ export const FormularioTareas = (props) => {
       <input
       type="text"
       className="tarea-input"
-      placeholder="Agrega tus pendientes 😀"
+      placeholder="Agrega tus pendientes...📝"
       name='texto'
+      value={input}
       onChange={manejarCambio}
       />
       <button 
